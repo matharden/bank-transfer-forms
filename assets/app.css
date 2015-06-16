@@ -1,0 +1,11 @@
+.split-sort-code input {
+  width: 50px;
+  float: left;
+}
+
+.split-sort-code span {
+  width: 30px;
+  float: left;
+  padding-top: 6px;
+  text-align: center;
+}
