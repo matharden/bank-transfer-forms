@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nationwide bank transfer form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../assets/bootstrap.css">
+  <link rel="stylesheet" href="../assets/bootstrap-theme.css">
+  <link rel="stylesheet" href="../assets/app.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+
+      <h1>Make a single payment</h1>
+
+      <br>
+
+      <h3>Who would you like to pay?</h3>
+
+      <p>Add the details of the person or organisation you want to send money to</p>
+
+      <form action="../confirmation.html" class="form-horizontal">
+
+        <div class="form-group">
+          <label for="payee" class="col-sm-3 control-label">Name of payee:</label>
+          <div class="col-xs-4">
+            <input type="text" id="payee" class="form-control">
+          </div>
+          <div class="col-xs-5">
+            <p><em>This is the name of the person or organisation you are paying.</p></em>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reference" class="col-sm-3 control-label">Description (optional):</label>
+          <div class="col-sm-4">
+            <input type="text" id="reference" class="form-control">
+          </div>
+          <div class="col-xs-5">
+            <p>Can be used to help you identify your payment if you have multiple payments going to the same payee.</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="sort-code" class="col-sm-3 control-label">Sort code:</label>
+          <div class="col-xs-4 split-sort-code">
+            <input type="text" id="sort-code-1" class="form-control" maxlength="2">
+            <span>-</span>
+            <input type="text" id="sort-code-2" class="form-control" maxlength="2">
+            <span>-</span>
+            <input type="text" id="sort-code-3" class="form-control" maxlength="2">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="acc-number" class="col-sm-3 control-label">Account number:</label>
+          <div class="col-xs-4">
+            <input type="text" id="acc-number" class="form-control" maxlength="8">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reference" class="col-sm-3 control-label">Your reference:</label>
+          <div class="col-xs-4">
+            <input type="text" id="reference" class="form-control">
+          </div>
+          <div class="col-xs-5">
+            <ul style="padding-left:14px">
+              <li><em>If you're sending money to an individual this is the description that will appear on their statement.</em></li>
+              <li><em>If you're paying an organisation, this could be the reference number on your bill.</em></li>
+              <li><em>If you're unsure which number to use, please contact the organisation you want to pay.</em></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="amount" class="col-sm-3 control-label">Amount:</label>
+          <div class="col-xs-4">
+            <input type="text" id="amount" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group hidden">
+          <label for="date" class="col-sm-3 control-label">Date</label>
+          <div class="col-sm-3">
+            <input type="text" id="date" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-xs-12">
+            <button type="submit" class="btn btn-default pull-right">Continue</button>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
