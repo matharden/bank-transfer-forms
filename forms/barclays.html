@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Other bank transfer form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../assets/bootstrap.css">
+  <link rel="stylesheet" href="../assets/bootstrap-theme.css">
+  <link rel="stylesheet" href="../assets/app.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-3">
+
+      <h1>Make a payment</h1>
+
+      <br>
+
+      <form action="../confirmation.html">
+
+        <h2>Step 1: Payment details</h2>
+
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <div class="row">
+            <div class="col-xs-5">
+              <div class="input-group">
+                <div class="input-group-addon">£</div>
+                <input type="text" id="amount" class="form-control input-lg">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="payee">Name of payee</label>
+          <div class="row">
+            <div class="col-xs-5">
+              <input type="text" id="payee" class="form-control" placeholder="Account or company name">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="sort-code">Sort code</label>
+          <div class="row">
+            <div class="col-sm-5 split-sort-code">
+              <input type="text" id="sort-code" class="form-control">
+              <span>-</span>
+              <input type="text" id="sort-code" class="form-control">
+              <span>-</span>
+              <input type="text" id="sort-code" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="acc-number">Account number</label>
+          <div class="row">
+            <div class="col-sm-3">
+              <input type="text" id="acc-number" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reference">Reference</label>
+          <div class="row">
+            <div class="col-sm-5">
+              <input type="text" id="reference" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group hidden">
+          <label for="date">Date</label>
+          <div class="col-sm-2">
+            <input type="text" id="date" class="form-control">
+          </div>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="save">
+            Add these details to my payee list so I don't need to authorise this payee next time.
+          </label>
+        </div>
+
+        <h3>Make payment</h3>
+
+        <div>
+          <label class="radio-inline">
+            <input name="date" type="radio" id="now" value="now" checked> Now
+          </label>
+          <label class="radio-inline">
+            <input name="date" type="radio" id="later" value="later"> Later
+          </label>
+        </div>
+
+        <br>
+
+        <button type="submit" class="btn btn-default">Next</button>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
