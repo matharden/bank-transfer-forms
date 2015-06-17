@@ -29,3 +29,7 @@
 .input-medium {
   width: 100px;
 }
+
+.normal {
+  font-weight: normal;
+}
