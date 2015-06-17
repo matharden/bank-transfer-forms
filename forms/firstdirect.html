@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Other bank transfer form</title>
+  <title>First Direct bank transfer form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="../assets/bootstrap.css">
   <link rel="stylesheet" href="../assets/bootstrap-theme.css">
@@ -22,49 +22,49 @@
       <form action="../confirmation.html" class="form-horizontal left-labels">
 
         <div class="form-group">
-          <label for="sort-code" class="col-sm-5 control-label">Destination sort code</label>
-          <div class="col-sm-2 has-inline-help">
-            <input type="text" id="sort-code" class="form-control input-small"> <span class="inline-help">6 digits</span>
+          <label for="sort-code" class="col-xs-5 control-label">Destination sort code</label>
+          <div class="col-xs-5 has-inline-help">
+            <input type="text" id="sort-code" class="form-control input-small" maxlength="6"> <span class="inline-help">6 digits</span>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="acc-number" class="col-sm-5 control-label">Destination account number</label>
-          <div class="col-sm-3 has-inline-help">
-            <input type="text" id="acc-number" class="form-control input-medium"> <span class="inline-help">8 digits</span>
+          <label for="acc-number" class="col-xs-5 control-label">Destination account number</label>
+          <div class="col-xs-3 has-inline-help">
+            <input type="text" id="acc-number" class="form-control input-medium" maxlength="8"> <span class="inline-help">8 digits</span>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="payee" class="col-sm-5 control-label">Destination name</label>
-          <div class="col-sm-4">
+          <label for="payee" class="col-xs-5 control-label">Destination name</label>
+          <div class="col-xs-5">
             <input type="text" id="payee" class="form-control">
           </div>
         </div>
 
         <div class="form-group">
-          <label for="reference" class="col-sm-5 control-label">Reference<br>(max 18 characters)</label>
-          <div class="col-sm-4">
-            <input type="text" id="reference" class="form-control">
+          <label for="reference" class="col-xs-5 control-label">Reference<br>(max 18 characters)</label>
+          <div class="col-xs-5">
+            <input type="text" id="reference" class="form-control" maxlength="18">
           </div>
         </div>
 
         <div class="form-group">
-          <label for="amount" class="col-sm-5 control-label">Enter amount</label>
-          <div class="col-sm-2">
+          <label for="amount" class="col-xs-5 control-label">Enter amount</label>
+          <div class="col-xs-2">
             <input type="text" id="amount" class="form-control">
           </div>
         </div>
 
         <div class="form-group">
-          <label for="date" class="col-sm-5 control-label">Enter date<br>(dd/mm/yyyy)</label>
-          <div class="col-sm-2">
+          <label for="date" class="col-xs-5 control-label">Enter date<br>(dd/mm/yyyy)</label>
+          <div class="col-xs-5">
             <input type="text" id="date" class="form-control">
           </div>
         </div>
 
         <div class="form-group">
-          <div class="col-sm-offset-5 col-sm-10">
+          <div class="col-xs-offset-5 col-xs-7">
             <button type="submit" class="btn btn-default">Proceed</button>
           </div>
         </div>
