@@ -3,6 +3,10 @@
   float: left;
 }
 
+.has-inline-inputs input {
+  display: inline;
+}
+
 .split-sort-code span {
   width: 30px;
   float: left;

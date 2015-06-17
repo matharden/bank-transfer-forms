@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HSBC bank transfer form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../assets/bootstrap.css">
+  <link rel="stylesheet" href="../assets/bootstrap-theme.css">
+  <link rel="stylesheet" href="../assets/app.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-3">
+
+      <h1>Make a payment</h1>
+
+      <br>
+
+      <form action="../confirmation.html" class="form-horizontal">
+
+        <p>Please complete the following details:</p>
+
+        <div class="form-group">
+          <label for="payee" class="col-sm-4 control-label">Who do you want to pay?</label>
+          <div class="col-sm-4">
+            <input type="text" id="payee" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reference" class="col-sm-4 control-label">What's your reference?</label>
+          <div class="col-sm-4">
+            <input type="text" id="reference" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="sort-code" class="col-sm-4 control-label">What's their sort code?</label>
+          <div class="col-sm-5 split-sort-code">
+            <input type="text" id="sort-code-1" class="form-control">
+            <span>-</span>
+            <input type="text" id="sort-code-2" class="form-control">
+            <span>-</span>
+            <input type="text" id="sort-code-3" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="acc-number" class="col-sm-4 control-label">What is their account number?</label>
+          <div class="col-sm-4">
+            <input type="text" id="acc-number" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="amount" class="col-sm-4 control-label">What's the amount?</label>
+          <div class="col-sm-5 split-sort-code">
+            <span>£</span>
+            <input type="text" id="sort-code" class="form-control" style="width:65px">
+            <span>.</span>
+            <input type="text" id="sort-code" class="form-control" maxlength="2">
+            <span>p</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="date" class="col-sm-4 control-label">When do you want to send this payment? (Up to 12 months in the future)</label>
+          <div class="radio">
+            <label>
+              Immediately <input type="checkbox" name="date" value="now"> <br>
+            </label>
+            <span class="has-inline-inputs">
+              or <br>
+              Future date<br>
+              (dd/mm/yyyy) <input type="text" class="form-control input-small" maxlength="2"> / <input type="text" class="form-control input-small" maxlength="2"> / <input type="text" class="form-control input-medium" maxlength="4">
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-4 col-sm-10">
+            <button type="submit" class="btn btn-default">Proceed</button>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
