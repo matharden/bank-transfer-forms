@@ -11,7 +11,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-3">
+    <div class="col-sm-6 col-sm-offset-3">
 
       <h1>Make a payment</h1>
 
@@ -21,10 +21,12 @@
 
         <h2>Step 1: Payment details</h2>
 
+        <p>Your payment will arrive within 1 working day.</p>
+
         <div class="form-group">
           <label for="amount">Amount</label>
           <div class="row">
-            <div class="col-xs-5">
+            <div class="col-xs-8">
               <div class="input-group">
                 <div class="input-group-addon">£</div>
                 <input type="text" id="amount" class="form-control input-lg">
@@ -36,7 +38,7 @@
         <div class="form-group">
           <label for="payee">Name of payee</label>
           <div class="row">
-            <div class="col-xs-5">
+            <div class="col-xs-8">
               <input type="text" id="payee" class="form-control" placeholder="Account or company name">
             </div>
           </div>
@@ -45,12 +47,12 @@
         <div class="form-group">
           <label for="sort-code">Sort code</label>
           <div class="row">
-            <div class="col-sm-5 split-sort-code">
-              <input type="text" id="sort-code" class="form-control">
+            <div class="col-xs-12 split-sort-code">
+              <input type="text" id="sort-code" class="form-control" maxlength="2">
               <span>-</span>
-              <input type="text" id="sort-code" class="form-control">
+              <input type="text" id="sort-code" class="form-control" maxlength="2">
               <span>-</span>
-              <input type="text" id="sort-code" class="form-control">
+              <input type="text" id="sort-code" class="form-control" maxlength="2">
             </div>
           </div>
         </div>
@@ -58,8 +60,8 @@
         <div class="form-group">
           <label for="acc-number">Account number</label>
           <div class="row">
-            <div class="col-sm-3">
-              <input type="text" id="acc-number" class="form-control">
+            <div class="col-xs-5">
+              <input type="text" id="acc-number" class="form-control" maxlength="8">
             </div>
           </div>
         </div>
@@ -67,8 +69,8 @@
         <div class="form-group">
           <label for="reference">Reference</label>
           <div class="row">
-            <div class="col-sm-5">
-              <input type="text" id="reference" class="form-control">
+            <div class="col-xs-8">
+              <input type="text" id="reference" class="form-control" maxlength="18">
             </div>
           </div>
         </div>
