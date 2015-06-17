@@ -5,6 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="assets/bootstrap.css">
   <link rel="stylesheet" href="assets/bootstrap-theme.css">
+  <style>
+    .logos {
+      margin: 3em 0 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    .logos a {
+      float: left;
+      display: block;
+      width: 347px;
+      height: 147px;
+      margin: 0 20px 20px 0;
+      text-indent: -999px;
+      overflow: hidden;
+      background: no-repeat;
+    }
+    .logos .barclays a { background-image: url(assets/images/barclays.jpg); }
+    .logos .firstdirect a { background-image: url(assets/images/firstdirect.jpg); }
+    .logos .halifax a { background-image: url(assets/images/halifax.jpg); }
+    .logos .hsbc a { background-image: url(assets/images/hsbc.png); }
+    .logos .lloyds a { background-image: url(assets/images/lloyds.jpg); }
+    .logos .nationwide a { background-image: url(assets/images/nationwide.jpg); }
+    .logos .natwest a { background-image: url(assets/images/natwest.jpg); }
+    .logos .santander a { background-image: url(assets/images/santander.jpg); }
+    .logos .other a {
+      color: #fff;
+      font-size: 137px;
+      text-indent: 0;
+      background: #337ab7;
+    }
+  </style>
 </head>
 <body>
 
@@ -14,14 +45,28 @@
 
       <h1>Select your bank</h1>
 
-      <ul>
-        <li><a href="forms/barclays.html">Barclays</a></li>
-        <li><a href="forms/firstdirect.html">FirstDirect</a></li>
-        <li><a href="forms/halifax.html">Halifax (first step only)</a></li>
-        <li><a href="forms/hsbc.html">HSBC</a></li>
-        <li><a href="forms/lloyds.html">Lloyds</a></li>
-        <li><a href="forms/natwest.html">NatWest</a></li>
-        <li><a href="forms/other.html">Other</a></li>
+      <ul class="logos">
+        <li class="barclays">
+          <a href="forms/barclays.html">Barclays</a>
+        </li>
+        <li class="firstdirect">
+          <a href="forms/firstdirect.html">FirstDirect</a>
+        </li>
+        <li class="halifax">
+          <a href="forms/halifax.html">Halifax (first step only)</a>
+        </li>
+        <li class="hsbc">
+          <a href="forms/hsbc.html">HSBC</a>
+        </li>
+        <li class="lloyds">
+          <a href="forms/lloyds.html">Lloyds</a>
+        </li>
+        <li class="natwest">
+          <a href="forms/natwest.html">NatWest</a>
+        </li>
+        <li class="other">
+          <a href="forms/other.html">Other</a>
+        </li>
       </ul>
 
     </div>
