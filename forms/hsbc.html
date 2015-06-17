@@ -11,7 +11,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-3">
+    <div class="col-sm-10 col-sm-offset-2">
 
       <h1>Make a payment</h1>
 
@@ -66,15 +66,17 @@
 
         <div class="form-group">
           <label for="date" class="col-sm-4 control-label">When do you want to send this payment? (Up to 12 months in the future)</label>
-          <div class="radio">
-            <label>
-              Immediately <input type="checkbox" name="date" value="now"> <br>
-            </label>
-            <span class="has-inline-inputs">
+          <div class="col-sm-6">
+            <div class="radio">
+              <label style="padding:0">
+                Immediately <input type="checkbox" name="date" value="now"> <br>
+              </label>
+            </div>
+            <div class="has-inline-inputs">
               or <br>
               Future date<br>
               (dd/mm/yyyy) <input type="text" class="form-control input-small" maxlength="2"> / <input type="text" class="form-control input-small" maxlength="2"> / <input type="text" class="form-control input-medium" maxlength="4">
-            </span>
+            </div>
           </div>
         </div>
 
