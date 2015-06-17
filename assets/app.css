@@ -9,3 +9,23 @@
   padding-top: 6px;
   text-align: center;
 }
+
+.left-labels .control-label {
+  text-align: left;
+}
+
+.has-inline-help {
+  width: auto;
+}
+
+.has-inline-help .form-control {
+  display: inline-block;
+}
+
+.input-small {
+  width: 50px;
+}
+
+.input-medium {
+  width: 100px;
+}
