@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Santander bank transfer form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../assets/bootstrap.css">
+  <link rel="stylesheet" href="../assets/bootstrap-theme.css">
+  <link rel="stylesheet" href="../assets/app.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+
+      <h1>Payment Details</h1>
+
+      <br>
+
+      <p>Please note, all fields marked with (*) are mandatory.</p>
+
+      <form action="../confirmation.html">
+
+        <div class="form-group">
+          <label for="payee">(*) Payee name:</label>
+          <div class="row">
+            <div class="col-xs-6">
+              <input type="text" id="payee" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <p>Enter recipient's account details here:</p>
+
+        <div class="form-group">
+          <label for="sort-code">(*) Their sort code:</label>
+          <div class="row">
+            <div class="col-xs-12 split-sort-code">
+              <input type="text" id="sort-code-1" class="form-control" maxlength="2">
+              <span>-</span>
+              <input type="text" id="sort-code-2" class="form-control" maxlength="2">
+              <span>-</span>
+              <input type="text" id="sort-code-3" class="form-control" maxlength="2">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="acc-number">(*) Their account number:</label>
+          <div class="row">
+            <div class="col-xs-5">
+              <input type="text" id="acc-number" class="form-control" maxlength="8">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reference">(*) Payment reference:</label>
+          <div class="row">
+            <div class="col-xs-6">
+              <input type="text" id="reference" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <p>If you would like to make a payment please complete the details below and click "Continue". If you only want to save the payment details then click "Continue" now.</p>
+
+        <div class="form-group">
+          <label for="amount">(*) Amount:</label>
+          <div class="row">
+            <div class="col-xs-5 has-inline-inputs">
+              <div class="input-group">
+                <div class="input-group-addon">£</div>
+                <input type="text" id="amount" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="date">(*) Take from my account:</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="date" id="optionsRadios1" value="now" checked>
+              Now
+            </label>
+          </div>
+          <div class="radio has-inline-inputs">
+            <label>
+              <input type="radio" name="date" id="optionsRadios2" value="later">
+              On this date:
+            </label>
+            <input type="text" class="form-control input-small" maxlength="2"> / <input type="text" class="form-control input-small" maxlength="2"> / <input type="text" class="form-control input-medium" maxlength="4">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-default">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
