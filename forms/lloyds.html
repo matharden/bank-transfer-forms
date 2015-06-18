@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Other bank transfer form</title>
+  <title>Lloyds bank transfer form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="../assets/bootstrap.css">
   <link rel="stylesheet" href="../assets/bootstrap-theme.css">
@@ -11,7 +11,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-3">
+    <div class="col-sm-8 col-sm-offset-3">
 
       <h1>Add a new recipient</h1>
 
@@ -34,11 +34,11 @@
           <label for="sort-code">Sort code:</label>
           <div class="row">
             <div class="col-sm-5 split-sort-code">
-              <input type="text" id="sort-code" class="form-control">
+              <input type="text" id="sort-code-1" class="form-control" maxlength="2">
               <span>-</span>
-              <input type="text" id="sort-code" class="form-control">
+              <input type="text" id="sort-code-2" class="form-control" maxlength="2">
               <span>-</span>
-              <input type="text" id="sort-code" class="form-control">
+              <input type="text" id="sort-code-3" class="form-control" maxlength="2">
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@
           <label for="acc-number">Account number:</label>
           <div class="row">
             <div class="col-sm-3">
-              <input type="text" id="acc-number" class="form-control">
+              <input type="text" id="acc-number" class="form-control" maxlength="8">
             </div>
           </div>
         </div>
