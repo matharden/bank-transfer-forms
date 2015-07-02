@@ -2,6 +2,8 @@
 
 Mock-up of common UK bank transfer forms as they appear on the respective websites.
 
+A summary view is available only when JavaScript is available.
+
 ## Disclaimer
 
 This software is solely intended to be used as a prototyping and research device.
