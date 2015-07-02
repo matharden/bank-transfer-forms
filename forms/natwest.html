@@ -31,25 +31,25 @@
           <label for="payee">Name of person or company</label>
           <div class="row">
             <div class="col-sm-4">
-              <input type="text" id="payee" class="form-control">
+              <input type="text" name="payee" id="payee" class="form-control">
             </div>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="acc-number">Their account number</label>
+          <label for="account">Their account number</label>
           <div class="row">
             <div class="col-sm-3">
-              <input type="text" id="acc-number" class="form-control" maxlength="8">
+              <input type="text" name="account" id="account" class="form-control" maxlength="8">
             </div>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="sort-code">Their sort code</label>
+          <label for="sortcode">Their sort code</label>
           <div class="row">
             <div class="col-sm-3">
-              <input type="text" id="sort-code" class="form-control" maxlength="8">
+              <input type="text" name="sortcode" id="sortcode" class="form-control" maxlength="8">
             </div>
           </div>
         </div>
@@ -58,16 +58,16 @@
           <label for="reference">Their reference</label>
           <div class="row">
             <div class="col-sm-3">
-              <input type="text" id="reference" class="form-control">
+              <input type="text" name="reference" id="reference" class="form-control">
             </div>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="account">From account</label>
+          <label for="from">From account</label>
           <div class="row">
             <div class="col-sm-5">
-              <select class="form-control" id="account">
+              <select class="form-control" name="from" id="from">
                 <option value="">My debit account 1</option>
                 <option value="">My debit account 2</option>
               </select>
@@ -79,7 +79,7 @@
           <label for="amount">Amount</label>
           <div class="row">
             <div class="col-sm-3">
-              <input type="text" id="amount" class="form-control">
+              <input type="text" name="amount" id="amount" class="form-control">
             </div>
           </div>
         </div>
@@ -92,5 +92,6 @@
   </div>
 </div>
 
+<script src="../assets/app.js"></script>
 </body>
 </html>

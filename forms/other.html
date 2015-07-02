@@ -11,7 +11,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-2">
+    <div class="col-sm-10 col-sm-offset-1">
 
       <div class="alert alert-info" role="alert">
         This is not a real banking service. Use for testing purposes only. No money will be moved.
@@ -24,48 +24,48 @@
       <form action="../confirmation.html" class="form-horizontal">
 
         <div class="form-group">
-          <label for="sort-code" class="col-sm-4 control-label">Sort code</label>
+          <label for="sortcode-1" class="col-sm-4 control-label">Sort code</label>
           <div class="col-sm-5 split-sort-code">
-            <input type="text" id="sort-code-1" class="form-control" maxlength="2">
+            <input type="text" name="sortcode-1" id="sortcode-1" class="form-control" maxlength="2">
             <span>-</span>
-            <input type="text" id="sort-code-2" class="form-control" maxlength="2">
+            <input type="text" name="sortcode-2" id="sortcode-2" class="form-control" maxlength="2">
             <span>-</span>
-            <input type="text" id="sort-code-3" class="form-control" maxlength="2">
+            <input type="text" name="sortcode-3" id="sortcode-3" class="form-control" maxlength="2">
           </div>
         </div>
 
         <div class="form-group">
-          <label for="acc-number" class="col-sm-4 control-label">Account number</label>
+          <label for="account" class="col-sm-4 control-label">Account number</label>
           <div class="col-sm-2">
-            <input type="text" id="acc-number" class="form-control" maxlength="8">
+            <input type="text" name="account" id="account" class="form-control" maxlength="8">
           </div>
         </div>
 
         <div class="form-group">
           <label for="payee" class="col-sm-4 control-label">Payee</label>
           <div class="col-sm-4">
-            <input type="text" id="payee" class="form-control">
+            <input type="text" name="payee" id="payee" class="form-control">
           </div>
         </div>
 
         <div class="form-group">
           <label for="reference" class="col-sm-4 control-label">Reference</label>
           <div class="col-sm-4">
-            <input type="text" id="reference" class="form-control">
+            <input type="text" name="reference" id="reference" class="form-control">
           </div>
         </div>
 
         <div class="form-group">
           <label for="amount" class="col-sm-4 control-label">Amount</label>
           <div class="col-sm-2">
-            <input type="text" id="amount" class="form-control">
+            <input type="text" name="amount" id="amount" class="form-control">
           </div>
         </div>
 
         <div class="form-group">
           <label for="date" class="col-sm-4 control-label">Date</label>
           <div class="col-sm-3">
-            <input type="text" id="date" class="form-control">
+            <input type="text" name="date" id="date" class="form-control">
           </div>
         </div>
 
@@ -81,5 +81,6 @@
   </div>
 </div>
 
+<script src="../assets/app.js"></script>
 </body>
 </html>

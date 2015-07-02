@@ -31,29 +31,29 @@
           <label for="payee">Name of recipient:</label>
           <div class="row">
             <div class="col-sm-3">
-              <input type="text" id="payee" class="form-control">
+              <input type="text" name="payee" id="payee" class="form-control">
             </div>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="sort-code">Sort code:</label>
+          <label for="sortcode-1">Sort code:</label>
           <div class="row">
             <div class="col-sm-5 split-sort-code">
-              <input type="text" id="sort-code-1" class="form-control" maxlength="2">
+              <input type="text" name="sortcode-1" id="sortcode-1" class="form-control" maxlength="2">
               <span>-</span>
-              <input type="text" id="sort-code-2" class="form-control" maxlength="2">
+              <input type="text" name="sortcode-2" id="sortcode-2" class="form-control" maxlength="2">
               <span>-</span>
-              <input type="text" id="sort-code-3" class="form-control" maxlength="2">
+              <input type="text" name="sortcode-3" id="sortcode-3" class="form-control" maxlength="2">
             </div>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="acc-number">Account number:</label>
+          <label for="account">Account number:</label>
           <div class="row">
             <div class="col-sm-3">
-              <input type="text" id="acc-number" class="form-control" maxlength="8">
+              <input type="text" name="account" id="account" class="form-control" maxlength="8">
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@
           <label for="reference">Reference: &nbsp; <span class="normal">Optional</span></label>
           <div class="row">
             <div class="col-sm-4">
-              <input type="text" id="reference" class="form-control">
+              <input type="text" name="reference" id="reference" class="form-control">
             </div>
           </div>
           <p>(e.g. Air tickets)</p>
@@ -74,7 +74,7 @@
             <div class="col-sm-3">
               <div class="input-group">
                 <div class="input-group-addon">&pound;</div>
-                <input type="text" id="amount" class="form-control">
+                <input type="text" name="amount" id="amount" class="form-control">
               </div>
             </div>
           </div>
@@ -166,5 +166,6 @@
   </div>
 </div>
 
+<script src="../assets/app.js"></script>
 </body>
 </html>

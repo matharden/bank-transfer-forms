@@ -28,37 +28,37 @@
       <form action="../confirmation.html" class="form-horizontal left-labels">
 
         <div class="form-group">
-          <label for="sort-code" class="col-xs-5 control-label">Destination sort code</label>
+          <label for="sortcode" class="col-xs-5 control-label">Destination sort code</label>
           <div class="col-xs-5 has-inline-help">
-            <input type="text" id="sort-code" class="form-control input-small" maxlength="6"> <span class="inline-help">6 digits</span>
+            <input type="text" name="sortcode" id="sortcode" class="form-control input-small" maxlength="6"> <span class="inline-help">6 digits</span>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="acc-number" class="col-xs-5 control-label">Destination account number</label>
+          <label for="account" class="col-xs-5 control-label">Destination account number</label>
           <div class="col-xs-3 has-inline-help">
-            <input type="text" id="acc-number" class="form-control input-medium" maxlength="8"> <span class="inline-help">8 digits</span>
+            <input type="text" name="account" id="account" class="form-control input-medium" maxlength="8"> <span class="inline-help">8 digits</span>
           </div>
         </div>
 
         <div class="form-group">
           <label for="payee" class="col-xs-5 control-label">Destination name</label>
           <div class="col-xs-5">
-            <input type="text" id="payee" class="form-control">
+            <input type="text" name="payee" id="payee" class="form-control">
           </div>
         </div>
 
         <div class="form-group">
           <label for="reference" class="col-xs-5 control-label">Reference<br>(max 18 characters)</label>
           <div class="col-xs-5">
-            <input type="text" id="reference" class="form-control" maxlength="18">
+            <input type="text" name="reference" id="reference" class="form-control" maxlength="18">
           </div>
         </div>
 
         <div class="form-group">
           <label for="amount" class="col-xs-5 control-label">Enter amount</label>
           <div class="col-xs-2">
-            <input type="text" id="amount" class="form-control">
+            <input type="text" name="amount" id="amount" class="form-control">
           </div>
         </div>
 
@@ -81,5 +81,6 @@
   </div>
 </div>
 
+<script src="../assets/app.js"></script>
 </body>
 </html>

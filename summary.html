@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Other bank transfer form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="assets/bootstrap.css">
+  <link rel="stylesheet" href="assets/bootstrap-theme.css">
+  <style type="text/css">
+    dt {
+      font-weight: normal;
+    }
+    dd {
+      margin: 0 0 1em 3em;
+      font-weight: bold;
+      font-size: 19px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-3">
+
+      <h1>Payment summary</h1>
+
+      <p>Please confirm this payment</p>
+
+      <dl>
+        <dt>Amount:</dt>
+        <dd>&pound;<span id="amount"></span></dd>
+
+        <dt>Payee:</dt>
+        <dd><span id="payee"></span></dd>
+
+        <dt>Sort code:</dt>
+        <dd><span id="sortcode"></span></dd>
+
+        <dt>Account number:</dt>
+        <dd><span id="account"></span></dd>
+
+        <dt>Reference:</dt>
+        <dd><span id="reference"></span></dd>
+
+      </dl>
+
+      <a href="confirmation.html" class="btn btn-default">Confirm</a>
+
+    </div>
+  </div>
+</div>
+
+<script>
+
+var getParameterByName = function(name){
+  name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+  var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+  return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+};
+
+['amount', 'payee', 'account', 'sortcode', 'reference'].forEach(function(name){
+  var val = getParameterByName(name);
+
+  if (name === 'sortcode') {
+    if (getParameterByName('sortcode-1')) {
+      val = getParameterByName('sortcode-1') + getParameterByName('sortcode-2') + getParameterByName('sortcode-3');
+    }
+    val = val.match(/.{1,2}/g).join('-');
+  }
+
+  if (name === 'amount') {
+    var pence = getParameterByName('amount-pence') || 0;
+    val = (parseFloat(val + '.' + pence)).toFixed(2);
+  }
+
+  document.getElementById(name).innerHTML = val;
+});
+
+</script>
+</body>
+</html>
