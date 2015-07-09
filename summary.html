@@ -50,14 +50,8 @@
   </div>
 </div>
 
+<script src="assets/app.js"></script>
 <script>
-
-var getParameterByName = function(name){
-  name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-  var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-    results = regex.exec(location.search);
-  return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-};
 
 ['amount', 'payee', 'account', 'sortcode', 'reference'].forEach(function(name){
   var val = getParameterByName(name);
