@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login to your bank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../assets/bootstrap.css">
+  <link rel="stylesheet" href="../assets/bootstrap-theme.css">
+  <link rel="stylesheet" href="../assets/app.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+
+      <div class="alert alert-info" role="alert">
+        This is not a real banking service. Use for testing purposes only. No money will be moved.
+      </div>
+
+      <img src="">
+
+      <h1>Login</h1>
+
+      <br>
+
+      <form action="forms/barclays.html">
+
+        <div class="form-group">
+          <label for="username">Username</label>
+          <div class="row">
+            <div class="col-xs-8">
+              <input type="text" name="username" id="username" class="form-control input-lg" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="row">
+            <div class="col-xs-8">
+              <input type="password" name="password" id="password" class="form-control input-lg" required>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <button type="submit" class="btn btn-default">Login</button>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+<script>
+
+var bank = getParameterByName('bank'),
+    form = document.querySelector('form'),
+    logo = document.querySelector('img');
+
+form.setAttribute('action', 'forms/' + bank + '.html');
+if (bank !== 'other') {
+  logo.setAttribute('src', 'assets/images/' + bank + '.jpg');
+}
+
+</script>
+</body>
+</html>

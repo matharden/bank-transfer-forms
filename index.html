@@ -81,5 +81,13 @@
   </div>
 </div>
 
+<script>
+  var links = document.querySelectorAll('a');
+
+  for (var i=0; i<links.length; i++) {
+    var bank = links[i].getAttribute('href').match(/([a-z]+).html/)[1];
+    links[i].setAttribute('href', 'login.html?bank=' + bank);
+  }
+</script>
 </body>
 </html>
