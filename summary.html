@@ -60,7 +60,7 @@
     if (getParameterByName('sortcode-1')) {
       val = getParameterByName('sortcode-1') + getParameterByName('sortcode-2') + getParameterByName('sortcode-3');
     }
-    val = val.match(/.{1,2}/g).join('-');
+    val = val.replace(/-/g, '').match(/.{1,2}/g).join('-');
   }
 
   if (name === 'amount') {
